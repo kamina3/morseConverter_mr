@@ -12,11 +12,12 @@ class Controller
     attr_accessor :button , :orgform , :kanaform, :alpform
     def initialize
         @mc = MorseCode.new
-        puts "initialize"
+        #puts "initialize"
     end
     
     def button_pressd(sender)
-        puts "the button pressed!"
-        orgform.setStringValue("button pressed!")
+        #puts "the button pressed!"
+        str = orgform.stringValue
+        kanaform.setStringValue(@mc.ja_morse(str))
     end
 end
