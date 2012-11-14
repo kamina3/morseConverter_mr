@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07418D1D165342220033130E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07418D1C165342220033130E /* Cocoa.framework */; };
+		07418D1F165342220033130E /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07418D1E165342220033130E /* MacRuby.framework */; };
+		07418D28165342220033130E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07418D26165342220033130E /* InfoPlist.strings */; };
+		07418D2A165342220033130E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07418D29165342220033130E /* main.m */; };
+		07418D2F165342220033130E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07418D2D165342220033130E /* MainMenu.xib */; };
+		07418D32165342220033130E /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 07418D31165342220033130E /* rb_main.rb */; };
+		07418D34165342220033130E /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 07418D33165342220033130E /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07418D21165342220033130E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07418D0F165342210033130E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07418D17165342210033130E;
+			remoteInfo = MorseConverter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07418D18165342210033130E /* MorseConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07418D1C165342220033130E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		07418D1E165342220033130E /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		07418D25165342220033130E /* MorseConverter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MorseConverter-Info.plist"; sourceTree = "<group>"; };
+		07418D27165342220033130E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07418D29165342220033130E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07418D2B165342220033130E /* MorseConverter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MorseConverter-Prefix.pch"; sourceTree = "<group>"; };
+		07418D2E165342220033130E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		07418D31165342220033130E /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		07418D33165342220033130E /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07418D15165342210033130E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07418D1D165342220033130E /* Cocoa.framework in Frameworks */,
+				07418D1F165342220033130E /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07418D0D165342210033130E = {
+			isa = PBXGroup;
+			children = (
+				07418D23165342220033130E /* MorseConverter */,
+				07418D1B165342220033130E /* Frameworks */,
+				07418D19165342210033130E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07418D19165342210033130E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07418D18165342210033130E /* MorseConverter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07418D1B165342220033130E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07418D1C165342220033130E /* Cocoa.framework */,
+				07418D1E165342220033130E /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07418D23165342220033130E /* MorseConverter */ = {
+			isa = PBXGroup;
+			children = (
+				07418D33165342220033130E /* AppDelegate.rb */,
+				07418D2C165342220033130E /* Resources */,
+				07418D30165342220033130E /* Other Sources */,
+				07418D24165342220033130E /* Supporting Files */,
+			);
+			path = MorseConverter;
+			sourceTree = "<group>";
+		};
+		07418D24165342220033130E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07418D25165342220033130E /* MorseConverter-Info.plist */,
+				07418D26165342220033130E /* InfoPlist.strings */,
+				07418D29165342220033130E /* main.m */,
+				07418D2B165342220033130E /* MorseConverter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07418D2C165342220033130E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				07418D2D165342220033130E /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		07418D30165342220033130E /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				07418D31165342220033130E /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		07418D20165342220033130E /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = 07418D3A165342220033130E /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				07418D22165342220033130E /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		07418D17165342210033130E /* MorseConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07418D37165342220033130E /* Build configuration list for PBXNativeTarget "MorseConverter" */;
+			buildPhases = (
+				07418D14165342210033130E /* Sources */,
+				07418D15165342210033130E /* Frameworks */,
+				07418D16165342210033130E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MorseConverter;
+			productName = MorseConverter;
+			productReference = 07418D18165342210033130E /* MorseConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07418D0F165342210033130E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = neige7;
+			};
+			buildConfigurationList = 07418D12165342210033130E /* Build configuration list for PBXProject "MorseConverter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 07418D0D165342210033130E;
+			productRefGroup = 07418D19165342210033130E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07418D17165342210033130E /* MorseConverter */,
+				07418D20165342220033130E /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07418D16165342210033130E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07418D28165342220033130E /* InfoPlist.strings in Resources */,
+				07418D2F165342220033130E /* MainMenu.xib in Resources */,
+				07418D32165342220033130E /* rb_main.rb in Resources */,
+				07418D34165342220033130E /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07418D14165342210033130E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07418D2A165342220033130E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07418D22165342220033130E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07418D17165342210033130E /* MorseConverter */;
+			targetProxy = 07418D21165342220033130E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07418D26165342220033130E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07418D27165342220033130E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		07418D2D165342220033130E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07418D2E165342220033130E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07418D35165342220033130E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		07418D36165342220033130E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		07418D38165342220033130E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Library/Frameworks\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MorseConverter/MorseConverter-Prefix.pch";
+				INFOPLIST_FILE = "MorseConverter/MorseConverter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		07418D39165342220033130E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Library/Frameworks\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MorseConverter/MorseConverter-Prefix.pch";
+				INFOPLIST_FILE = "MorseConverter/MorseConverter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		07418D3B165342220033130E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		07418D3C165342220033130E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07418D12165342210033130E /* Build configuration list for PBXProject "MorseConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07418D35165342220033130E /* Debug */,
+				07418D36165342220033130E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07418D37165342220033130E /* Build configuration list for PBXNativeTarget "MorseConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07418D38165342220033130E /* Debug */,
+				07418D39165342220033130E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07418D3A165342220033130E /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07418D3B165342220033130E /* Debug */,
+				07418D3C165342220033130E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07418D0F165342210033130E /* Project object */;
+}
