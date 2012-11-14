@@ -368,6 +368,15 @@
 									<reference key="NSOnImage" ref="35465992"/>
 									<reference key="NSMixedImage" ref="502551668"/>
 								</object>
+								<object class="NSMenuItem" id="308632895">
+									<reference key="NSMenu" ref="324781753"/>
+									<string key="NSTitle">Clear</string>
+									<string key="NSKeyEquiv">e</string>
+									<int key="NSKeyEquivModMask">1048576</int>
+									<int key="NSMnemonicLoc">2147483647</int>
+									<reference key="NSOnImage" ref="35465992"/>
+									<reference key="NSMixedImage" ref="502551668"/>
+								</object>
 							</object>
 						</object>
 					</object>
@@ -473,7 +482,6 @@
 							<int key="NSvFlags">258</int>
 							<string key="NSFrame">{{30, 282}, {416, 63}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="147260309"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
@@ -514,7 +522,6 @@
 							<int key="NSvFlags">260</int>
 							<string key="NSFrame">{{27, 239}, {167, 26}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="605883149"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
@@ -533,7 +540,7 @@
 								<int key="NSPeriodicInterval">75</int>
 								<object class="NSMenuItem" key="NSMenuItem" id="774185786">
 									<reference key="NSMenu" ref="857000188"/>
-									<string key="NSTitle">モールス符号へ</string>
+									<string key="NSTitle">モールス信号へ</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -552,7 +559,7 @@
 										<reference ref="774185786"/>
 										<object class="NSMenuItem" id="194924713">
 											<reference key="NSMenu" ref="857000188"/>
-											<string key="NSTitle">モールス符号から戻す</string>
+											<string key="NSTitle">モールス信号から戻す</string>
 											<string key="NSKeyEquiv"/>
 											<int key="NSKeyEquivModMask">1048576</int>
 											<int key="NSMnemonicLoc">2147483647</int>
@@ -565,6 +572,7 @@
 									</object>
 									<reference key="NSMenuFont" ref="316256842"/>
 								</object>
+								<int key="NSSelectedIndex">-1</int>
 								<int key="NSPreferredEdge">1</int>
 								<bool key="NSUsesItemFromMenu">YES</bool>
 								<bool key="NSAltersState">YES</bool>
@@ -576,7 +584,6 @@
 							<int key="NSvFlags">258</int>
 							<string key="NSFrame">{{30, 147}, {416, 66}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="205782614"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
@@ -597,7 +604,6 @@
 							<int key="NSvFlags">258</int>
 							<string key="NSFrame">{{30, 38}, {416, 71}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
@@ -618,7 +624,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{205, 235}, {66, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="820437533"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
@@ -646,7 +651,6 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{50, 218}, {120, 17}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="101761477"/>
 							<string key="NSReuseIdentifierKey">_NS:1535</string>
 							<bool key="NSEnabled">YES</bool>
@@ -679,7 +683,6 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{50, 117}, {185, 17}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="372196569"/>
 							<string key="NSReuseIdentifierKey">_NS:1535</string>
 							<bool key="NSEnabled">YES</bool>
@@ -697,7 +700,6 @@
 					</object>
 					<string key="NSFrameSize">{480, 360}</string>
 					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="705791649"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
@@ -739,7 +741,7 @@
 						<reference key="source" ref="1021"/>
 						<reference key="destination" ref="976324537"/>
 					</object>
-					<int key="connectionID">495</int>
+					<int key="connectionID">595</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
@@ -956,6 +958,14 @@
 						<reference key="destination" ref="362054626"/>
 					</object>
 					<int key="connectionID">593</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">clear:</string>
+						<reference key="source" ref="836909255"/>
+						<reference key="destination" ref="308632895"/>
+					</object>
+					<int key="connectionID">601</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1436,6 +1446,7 @@
 							<reference ref="794109980"/>
 							<reference ref="618850164"/>
 							<reference ref="362054626"/>
+							<reference ref="308632895"/>
 						</object>
 						<reference key="parent" ref="817508125"/>
 					</object>
@@ -1457,6 +1468,11 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">592</int>
 						<reference key="object" ref="362054626"/>
+						<reference key="parent" ref="324781753"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">600</int>
+						<reference key="object" ref="308632895"/>
 						<reference key="parent" ref="324781753"/>
 					</object>
 				</object>
@@ -1525,6 +1541,7 @@
 					<string>587.IBPluginDependency</string>
 					<string>588.IBPluginDependency</string>
 					<string>592.IBPluginDependency</string>
+					<string>600.IBPluginDependency</string>
 					<string>72.IBPluginDependency</string>
 					<string>73.IBPluginDependency</string>
 					<string>74.IBPluginDependency</string>
@@ -1612,6 +1629,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -1626,7 +1644,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">593</int>
+			<int key="maxID">601</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1654,14 +1672,35 @@
 					<string key="className">Controller</string>
 					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">button_pressd:</string>
-						<string key="NS.object.0">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>button_pressd:</string>
+							<string>clear:</string>
+						</object>
+						<object class="NSArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">button_pressd:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">button_pressd:</string>
-							<string key="candidateClassName">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>button_pressd:</string>
+							<string>clear:</string>
+						</object>
+						<object class="NSArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBActionInfo">
+								<string key="name">button_pressd:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">clear:</string>
+								<string key="candidateClassName">id</string>
+							</object>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">

@@ -11,5 +11,8 @@ class AppDelegate
     def applicationDidFinishLaunching(a_notification)
         # Insert code here to initialize your application
     end
+    def new_window
+        applicationDidFinishLaunching(a_notification)
+    end
 end
 

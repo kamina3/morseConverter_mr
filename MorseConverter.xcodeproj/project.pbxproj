@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07177FBD1653974A007C2B9B /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 07177FBC1653974A007C2B9B /* icon.icns */; };
 		07418D1D165342220033130E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07418D1C165342220033130E /* Cocoa.framework */; };
 		07418D1F165342220033130E /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07418D1E165342220033130E /* MacRuby.framework */; };
 		07418D28165342220033130E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07418D26165342220033130E /* InfoPlist.strings */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07177FBC1653974A007C2B9B /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		07418D18165342210033130E /* MorseConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07418D1C165342220033130E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		07418D1E165342220033130E /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,6 +61,7 @@
 		07418D0D165342210033130E = {
 			isa = PBXGroup;
 			children = (
+				07177FBC1653974A007C2B9B /* icon.icns */,
 				07418D23165342220033130E /* MorseConverter */,
 				07418D1B165342220033130E /* Frameworks */,
 				07418D19165342210033130E /* Products */,
@@ -197,6 +200,7 @@
 				07418D34165342220033130E /* AppDelegate.rb in Resources */,
 				07418D3E165342C50033130E /* Controller.rb in Resources */,
 				07418D40165342CE0033130E /* MorseCode.rb in Resources */,
+				07177FBD1653974A007C2B9B /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +361,7 @@
 				07418D39165342220033130E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07418D3A165342220033130E /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -365,6 +370,7 @@
 				07418D3C165342220033130E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

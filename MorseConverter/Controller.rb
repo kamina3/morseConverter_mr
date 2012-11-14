@@ -46,4 +46,9 @@ class Controller
             puts ex.message
         end
     end
+    
+    def clear(sender)
+        kanaform.setStringValue("")
+        alpform.setStringValue("")
+    end
 end
