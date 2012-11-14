@@ -14,6 +14,8 @@
 		07418D2F165342220033130E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07418D2D165342220033130E /* MainMenu.xib */; };
 		07418D32165342220033130E /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 07418D31165342220033130E /* rb_main.rb */; };
 		07418D34165342220033130E /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 07418D33165342220033130E /* AppDelegate.rb */; };
+		07418D3E165342C50033130E /* Controller.rb in Resources */ = {isa = PBXBuildFile; fileRef = 07418D3D165342C50033130E /* Controller.rb */; };
+		07418D40165342CE0033130E /* MorseCode.rb in Resources */ = {isa = PBXBuildFile; fileRef = 07418D3F165342CE0033130E /* MorseCode.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		07418D2E165342220033130E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		07418D31165342220033130E /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		07418D33165342220033130E /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		07418D3D165342C50033130E /* Controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Controller.rb; sourceTree = "<group>"; };
+		07418D3F165342CE0033130E /* MorseCode.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = MorseCode.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 		07418D30165342220033130E /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				07418D3F165342CE0033130E /* MorseCode.rb */,
+				07418D3D165342C50033130E /* Controller.rb */,
 				07418D31165342220033130E /* rb_main.rb */,
 			);
 			name = "Other Sources";
@@ -189,6 +195,8 @@
 				07418D2F165342220033130E /* MainMenu.xib in Resources */,
 				07418D32165342220033130E /* rb_main.rb in Resources */,
 				07418D34165342220033130E /* AppDelegate.rb in Resources */,
+				07418D3E165342C50033130E /* Controller.rb in Resources */,
+				07418D40165342CE0033130E /* MorseCode.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
