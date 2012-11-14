@@ -14,7 +14,8 @@ class MorseCode
         @morse = ["－－・－－","・－","・・－","－・－－－","・－・・・","・－・・","－・－・・","・・・－","－・－－","－－－－","－・－・－","－－・－・","－－－・－","・－－－・","－－－・","－・","・・－・","・－－・","・－－・","・－・－－","・・－・・","・－・","－・－・","・・・・","－－・－","・・－－","－・・・","－－・・－","－－・・","・","－・・","－・・－","・・－・－","－","－・・・－","－・・－・","・－－","－・・－－","－－","・・・","－－・","－・－－・","－－－","・－・－","－・－","・－－－","・－・－・","・－・・　・・","－・－・・　・・","・・・－　・・","－・－－　・・","－－－－　・・","－・－・－　・・","－－・－・　・・","－－－・－　・・","・－－－・　・・","－－－・　・・","－・　・・","・・－・　・・","・－－・　・・","・－・－－　・・","・・－・・　・・","－・・・　・・","－－・・－　・・","－－・・　・・","・　・・","－・・　・・","－・・・　・・－－・","－－・・－　・・－－・","－－・・　・・－－・","・　・・－－・","－・・　・・－－・","・・","・・－－・"]
         @alpha = ["#","A","U","#","#","L","#","V","Y","#","#","#","#","#","#","N","F","P","P","#","#","R","C","H","Q","#","B","#","Z","E","D","*","#","T","=","/","W","#","M","S","G","(","O","#","K","J","+","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","I","#"]
     end
-    
+    #かな→モールス信号
+    public
     def ja_morse(str)
         i = 0
         conv = ""
@@ -26,7 +27,7 @@ class MorseCode
         
         return conv.slice(0, conv.length-1)
     end
-    
+    #かな1文字→モールス信号
     private
     def j_to_m(str)
         i=0
@@ -38,7 +39,7 @@ class MorseCode
         end
         return str
     end
-    
+    #アルファベット文字列→モールス信号
     public
     def al_morse(str)
         i = 0
@@ -53,6 +54,7 @@ class MorseCode
         return conv.slice(0, conv.length-1)
     end
     
+    #アルファベット1文字→モールス信号
     private
     def a_to_m(str)
         i=0
@@ -64,4 +66,51 @@ class MorseCode
         end
         return "##"
     end
+    
+    #モールス信号　→かな
+    public
+    def morse_ja(str)
+        tmp = str.split(/\s/)
+        conv = ""
+        tmp.each do |s|
+            conv += m_to_j(s)
+        end
+        return conv
+    end
+    
+    private
+    def m_to_j(str)
+        i=0
+        while i < @kana.length
+            if( str == @morse[i])
+                return @kana[i]
+            end
+            i += 1
+        end
+        return "##"
+    end
+    
+    public
+    def morse_al(str)
+        tmp = str.split(/\s/)
+        conv = ""
+        tmp.each do |s|
+            conv += m_to_a(s)
+        end
+        return conv
+    end
+    
+    private
+    def m_to_a(str)
+        i=0
+        while i < @alpha.length
+            if( str == @morse[i])
+                return @alpha[i]
+            end
+            i += 1
+        end
+        return "##"
+    end
+    
+    
 end

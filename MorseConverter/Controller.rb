@@ -40,6 +40,8 @@ class Controller
     def rev_conv_morse
         begin
             str = orgform.stringValue
+            kanaform.setStringValue(@mc.morse_ja(str))
+            alpform.setStringValue(@mc.morse_al(str))
         rescue => ex
             puts ex.message
         end
