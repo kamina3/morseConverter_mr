@@ -30,6 +30,9 @@ class MorseCode
     #かな1文字→モールス信号
     private
     def j_to_m(str)
+        if str =~ /\s/
+            return "　"
+        end
         i=0
         while i < @kana.length
             if(str == @kana[i])
@@ -57,6 +60,9 @@ class MorseCode
     #アルファベット1文字→モールス信号
     private
     def a_to_m(str)
+        if str =~ /\s/
+            return "　"
+        end
         i=0
         while i < @alpha.length
             if( str == @alpha[i])
@@ -102,6 +108,7 @@ class MorseCode
     
     private
     def m_to_a(str)
+
         i=0
         while i < @alpha.length
             if( str == @morse[i])
